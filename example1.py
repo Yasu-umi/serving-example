@@ -57,9 +57,9 @@ if __name__ == '__main__':
     # create predict request
     request = predict_pb2.PredictRequest()
     request.model_spec.name = MODEL_NAME
-    version = wrappers_pb2.Int64Value()
-    version.value = VERSION
-    request.model_spec.version.CopyFrom(version)
+    # version = wrappers_pb2.Int64Value()
+    # version.value = VERSION
+    # request.model_spec.version.CopyFrom(version)
     request.model_spec.signature_name = 'x_add_y'
 
     request.inputs['x'].dtype = types_pb2.DT_INT64

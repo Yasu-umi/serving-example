@@ -13,4 +13,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
+WORKDIR /root/serving-example
 EXPOSE 8500

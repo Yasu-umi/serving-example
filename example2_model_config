@@ -1,0 +1,18 @@
+model_config_list: {
+  config: {
+    name: "example2_estimator"
+    base_path: "/root/serving-example/tmp/example2_estimator"
+    model_platform: "tensorflow"
+    model_version_policy: {
+      latest: {num_versions: 3}
+    }
+  }
+  config: {
+    name: "example2_keras"
+    base_path: "/root/serving-example/tmp/example2_keras"
+    model_platform: "tensorflow"
+    model_version_policy: {
+      latest: {num_versions: 3}
+    }
+  }
+}
